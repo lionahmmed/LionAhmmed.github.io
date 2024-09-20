@@ -1,7 +1,7 @@
 /* Style for Header */
 header {
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Previous light gray background color */
   padding: 20px;
   border-bottom: 2px solid #ccc;
 }
@@ -9,18 +9,18 @@ header {
 /* Style for Footer */
 footer {
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Previous light gray background color */
   padding: 20px;
   border-top: 2px solid #ccc;
   margin-top: 20px;
 }
 
-/* Style for Contact Links */
-footer a {
+/* Style for Links */
+header a, footer a {
   color: #333;
   text-decoration: none;
 }
 
-footer a:hover {
+header a:hover, footer a:hover {
   text-decoration: underline;
 }
