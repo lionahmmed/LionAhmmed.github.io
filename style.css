@@ -1,26 +1,37 @@
+/* Style for Body */
+body {
+  display: flex; /* Use flexbox layout for the body */
+  flex-direction: column; /* Arrange children in a column */
+  min-height: 200vh; /* Ensure body takes at least full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
 /* Style for Header */
 header {
-  text-align: center;
-  background-color: #959191;
-  padding: 20px;
-  border-bottom: 2px solid #ccc;
+  text-align: center; /* Center the text inside the header */
+  background-color: #f2f2ea; /* Set a light background color for the header */
+  padding: 0; /* Remove padding to fit closely around the text */
+  /* border-bottom: 2px solid #f2f2ea;  Add a bottom border to the header */
 }
+/* Style for Main Content */
+main {
+  margin: 0; /* Remove default margin */
+  flex: 1; /* Allow main content to grow and take available space */
+  padding: 0 40px; /* Add padding to the left and right sides */
+}
+
 
 /* Style for Footer */
 footer {
-  text-align: center;
-  background-color: #959191;
-  padding: 10px;
-  border-top: 2px solid #ccc;
-  margin-top: 20px;
+  text-align: center; /* Center the text inside the footer */
+  background-color: #f2f2ea; /* Set a light background color for the footer */
+  padding: 0; /* Remove padding to fit closely around the text */
 }
-
 /* Style for Contact Links */
 footer a {
-  color: #333;
-  text-decoration: none;
+  color: #333; /* Set the text color for links in the footer */
+  text-decoration: none; /* Remove the underline from links */
 }
-
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Add underline on hover for links */
 }
