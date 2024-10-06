@@ -1,4 +1,4 @@
-/* Global Style for Body */
+/* Global Style for Body  */
 body {
   display: flex; /* Use flexbox layout for the body */
   flex-direction: column; /* Arrange children (header, main, footer) in a column */
