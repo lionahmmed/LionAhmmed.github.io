@@ -1,37 +1,96 @@
-/* Style for Body */
+/* Global Style for Body */
 body {
   display: flex; /* Use flexbox layout for the body */
-  flex-direction: column; /* Arrange children in a column */
-  min-height: 200vh; /* Ensure body takes at least full viewport height */
+  flex-direction: column; /* Arrange children (header, main, footer) in a column */
+  min-height: 100vh; /* Ensure body takes at least full viewport height */
   margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font for the page */
+  color: #333; /* Use a standard dark color for text */
 }
 
 /* Style for Header */
 header {
   text-align: center; /* Center the text inside the header */
-  background-color: #f2f2ea; /* Set a light background color for the header */
-  padding: 0; /* Remove padding to fit closely around the text */
-  /* border-bottom: 2px solid #f2f2ea;  Add a bottom border to the header */
-}
-/* Style for Main Content */
-main {
-  margin: 0; /* Remove default margin */
-  flex: 1; /* Allow main content to grow and take available space */
-  padding: 0 40px; /* Add padding to the left and right sides */
+  background-color: #f2f2ea; /* Set a light background color */
+  padding: 20px 0; /* Add padding around the text for breathing room */
+  border-bottom: 2px solid #ccc; /* Add a subtle bottom border for separation */
 }
 
+/* Style for H1 in Header */
+header h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 2.5em; /* Increase font size for better visibility */
+  color: #333; /* Ensure it matches the rest of the text */
+}
+
+header span {
+  font-size: 0.8em; /* Decrease font size for the IoT Engineer text */
+  color: #777; /* Use a lighter color to distinguish from the main title */
+}
+
+/* Style for Main Content */
+main {
+  flex: 1; /* Allow main content to take up the remaining space */
+  padding: 40px; /* Add padding for better spacing */
+  background-color: #fff; /* Set a white background for the main content */
+}
+
+main h2 {
+  font-size: 2em; /* Make section titles more prominent */
+  margin-top: 0; /* Remove top margin for the first h2 */
+}
+
+/* Style for Projects Section */
+main ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove padding from the list */
+}
+
+main li {
+  margin-bottom: 30px; /* Add space between each project */
+}
+
+main li img {
+  width: 100%; /* Make images responsive */
+  max-width: 500px; /* Limit image width */
+  border-radius: 5px; /* Add rounded corners to the images */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+main li p {
+  margin-top: 10px; /* Add space between the image and description */
+  font-size: 1em; /* Set a consistent font size */
+}
 
 /* Style for Footer */
 footer {
   text-align: center; /* Center the text inside the footer */
-  background-color: #f2f2ea; /* Set a light background color for the footer */
-  padding: 0; /* Remove padding to fit closely around the text */
+  background-color: #f2f2ea; /* Set a light background color */
+  padding: 20px 0; /* Add padding for breathing room */
+  border-top: 2px solid #ccc; /* Add a subtle top border for separation */
 }
+
 /* Style for Contact Links */
 footer a {
-  color: #333; /* Set the text color for links in the footer */
+  color: #333; /* Set a dark color for links */
   text-decoration: none; /* Remove the underline from links */
 }
+
 footer a:hover {
-  text-decoration: underline; /* Add underline on hover for links */
+  text-decoration: underline; /* Underline on hover for better interaction */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  header h1 {
+    font-size: 2em; /* Scale down the title on smaller screens */
+  }
+  
+  main li img {
+    max-width: 100%; /* Ensure images adjust to small screens */
+  }
 }
