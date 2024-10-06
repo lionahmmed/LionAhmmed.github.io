@@ -1,8 +1,8 @@
-/* Global Style for Body  */
+/* Global Style for Body */
 body {
   display: flex; /* Use flexbox layout for the body */
   flex-direction: column; /* Arrange children (header, main, footer) in a column */
-  min-height: 100vh; /* Ensure body takes at least full viewport height */
+  min-height: 50vh; /* Ensure body takes at least full viewport height */
   margin: 0; /* Remove default margin */
   font-family: Arial, sans-serif; /* Set a default font for the page */
   color: #333; /* Use a standard dark color for text */
@@ -12,8 +12,8 @@ body {
 header {
   text-align: center; /* Center the text inside the header */
   background-color: #f2f2ea; /* Set a light background color */
-  padding: 20px 0; /* Add padding around the text for breathing room */
-  border-bottom: 2px solid #ccc; /* Add a subtle bottom border for separation */
+  padding: 10px 0; /* Add padding around the text for breathing room */
+  border-bottom: 1px solid #ccc; /* Add a subtle bottom border for separation */
 }
 
 /* Style for H1 in Header */
@@ -31,7 +31,8 @@ header span {
 /* Style for Main Content */
 main {
   flex: 1; /* Allow main content to take up the remaining space */
-  padding: 40px; /* Add padding for better spacing */
+  padding: 20px; /* Add padding for better spacing */
+  margin: 0 20px; /* Add left and right margins */
   background-color: #fff; /* Set a white background for the main content */
 }
 
@@ -84,10 +85,11 @@ footer a:hover {
 @media (max-width: 768px) {
   main {
     padding: 20px; /* Reduce padding on smaller screens */
+    margin: 0 10px; /* Adjust left and right margins for smaller screens */
   }
 
   header h1 {
-    font-size: 2em; /* Scale down the title on smaller screens */
+    font-size: 1em; /* Scale down the title on smaller screens */
   }
   
   main li img {
